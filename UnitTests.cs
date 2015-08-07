@@ -59,7 +59,7 @@ namespace FunctionalDemo
             };
 
             // act
-            Functional.RunCustomerReportBastch(getCustomersForCustomerReport, createCustomerReport, sendEmail);
+            Functional.RunCustomerReportBatch(getCustomersForCustomerReport, createCustomerReport, sendEmail);
 
             // assert
             Assert.Equal(expectedCustomer.Email, actualToAddress);

@@ -14,13 +14,13 @@ namespace FunctionalDemo
 
         public static Action Compose()
         {
-            return () => RunCustomerReportBastch(
+            return () => RunCustomerReportBatch(
                 GetCustomersForCustomerReport,
                 CreateCustomerReport,
                 SendEmail);
         }
 
-        public static void RunCustomerReportBastch(
+        public static void RunCustomerReportBatch(
             Func<IEnumerable<Customer>> getCustomersForCustomerReport,
             Func<Customer, Report> createCustomerReport,
             Action<string, string> sendEmail)
